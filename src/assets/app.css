@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@import './fonts.css';
+@import './ui.css';
+
+button:hover {
+  cursor: pointer;
+}
+
+

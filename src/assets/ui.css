@@ -1,0 +1,14 @@
+.link-navigation {
+  @apply text-base font-semibold text-gray-500 hover:text-teal-500 transition-colors duration-200;
+}
+
+.card-link-primary {
+  @apply inline-block text-teal-600 hover:text-teal-700 font-bold text-sm transition-colors duration-200
+}
+.card-link-secondary {
+  @apply text-sky-600 font-medium text-sm transition-colors duration-200
+}
+
+.btn-outline {
+  @apply px-6 py-3 font-semibold rounded-xl shadow-sm bg-white hover:bg-gray-100 border border-gray-200 hover:border-gray-300 transition-all
+}
