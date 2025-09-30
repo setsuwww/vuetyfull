@@ -12,7 +12,7 @@
       <div v-for="destination in filteredDestinations.slice(0, visibleCount)" :key="destination.id" class="group rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-md transition-shadow duration-300">
         <!-- Image -->
         <div class="relative">
-          <img :src="destination.image" :alt="destination.name" class="w-full h-56 object-cover transition-transform duration-200"/>
+          <img :src="destination.image" :alt="destination.name" class="w-full h-56 object-cover transition-transform duration-200" loading="lazy"/>
 
           <button @click="toggleFavorite(destination.id)"
             :title="destination.isFavorite

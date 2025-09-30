@@ -47,7 +47,3 @@ const variantClass = computed(() => {
   }[props.variant]
 })
 </script>
-
-<style scoped>
-/* Opsional: tambahan efek jika kamu mau */
-</style>

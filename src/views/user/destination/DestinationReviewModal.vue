@@ -26,14 +26,10 @@
 
         <!-- Actions -->
         <div class="flex justify-end space-x-2">
-          <button type="button" @click="emit('close')"
-            class="px-4 py-2 font-semibold rounded-xl shadow-sm bg-white hover:bg-gray-100 border border-gray-200 hover:border-gray-300"
-          >
+          <button type="button" @click="emit('close')" class="px-4 py-2 font-semibold rounded-xl shadow-sm bg-white hover:bg-gray-100 border border-gray-200 hover:border-gray-300">
             Cancel
           </button>
-          <button type="submit"
-            class="px-4 py-2 text-white font-semibold rounded-xl bg-teal-600 hover:bg-teal-800 border border-teal-600 hover:border-teal-800"
-          >
+          <button type="submit" class="px-4 py-2 text-white font-semibold rounded-xl bg-teal-600 hover:bg-teal-800 border border-teal-600 hover:border-teal-800">
             Submit
           </button>
         </div>
@@ -64,14 +60,11 @@ async function handleSubmit() {
     try {
       const userId = 1;
       console.log('Submitting to:', `/api/destinations/${destinationId}/comments`);
-      const response = await axios.post(
-        `/api/destinations/${destinationId}/comments`,
-        {
+      const response = await axios.post(`/api/destinations/${destinationId}/comments`,  {
           content: comment.value.trim(),
           rating: rating.value,
           userId,
-        },
-        { withCredentials: true }
+        }, { withCredentials: true }
       );
       emit('submit', {
         comment: comment.value.trim(),

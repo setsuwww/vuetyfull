@@ -9,9 +9,15 @@ import AuthLayout from '@/pages/auth/AuthLayout.vue'
 import Dashboard from '@/pages/admin/Dashboard.vue'
 import Create from '@/pages/admin/destination/Create.vue'
 
+import AdminDestinations from '@/pages/admin/destination/DestinationPage.vue'
+import AdminGallery from '@/pages/admin/galery/GaleryPage.vue'
+import AdminUsers from '@/pages/admin/users/UsersPage.vue'
+
 import DestinationPage from '@/views/user/destination/DestinationPage.vue'
 import DestinationDetail from '@/views/user/destination/DestinationDetail.vue'
 import GaleryPage from '@/views/user/galery/GaleryPage.vue'
+import AboutPage from '@/views/user/about/AboutPage.vue'
+import ContactPage from '@/views/user/contact/ContactPage.vue'
 import AdminLayout from '../layouts/AdminLayout.vue'
 
 const routes = [
@@ -46,6 +52,21 @@ const routes = [
         name: 'Create',
         component: Create,
       },
+      {
+        path: 'destinations',
+        name: 'AdminDestinations',
+        component: AdminDestinations,
+      },
+      {
+        path: 'gallery',
+        name: 'AdminGallery',
+        component: AdminGallery,
+      },
+      {
+        path: 'users',
+        name: 'AdminUsers',
+        component: AdminUsers,
+      },
     ],
   },
 
@@ -74,6 +95,16 @@ const routes = [
         name: 'Galery',
         component: GaleryPage,
       },
+      {
+        path: 'about',
+        name: 'About',
+        component: AboutPage,
+      },
+      {
+        path: 'contact',
+        name: 'Contact',
+        component: ContactPage,
+      }
     ],
   },
 ]
